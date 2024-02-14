@@ -7,6 +7,7 @@ use Cake\Command\Command;
 use Cake\Console\Arguments;
 use Cake\Console\ConsoleIo;
 use Cake\Console\ConsoleOptionParser;
+use DOMDocument;
 
 /**
  * Check command.
@@ -43,13 +44,34 @@ class CheckCommand extends Command
     {
         $filePath = $args->getArgument('filepath');
 
+        //Check if the file exists and then validate 
+        $this->fileExists($filePath, $io);
+        $this->validateBitsFile($filePath, $io);
+
+        return;
+    }
+
+    public function fileExists(string $filePath, ConsoleIo $io): void
+    {
         if(!file_exists($filePath))
         {
-            $io->error('File not found: ' . $filePath);
+            $io->error('File not found: ' . $filePath . PHP_EOL);
+            return;
+        }
+    }
+
+    public function validateBitsFile(string $filePath, ConsoleIo $io): void
+    {   
+        $dom = new DOMDocument();
+        $loadedXml =  $dom->load($filePath);
+
+        if($loadedXml)
+        {
+            $io->success('XML loaded successfully!' . PHP_EOL);
             return;
         }
 
-        $io->success('File found: ' . $filePath);
+        $io->error('There was an error loading your file!' . PHP_EOL);
         return;
     }
 }
