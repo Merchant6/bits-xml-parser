@@ -8,6 +8,7 @@ use Cake\Console\Arguments;
 use Cake\Console\ConsoleIo;
 use Cake\Console\ConsoleOptionParser;
 use DOMDocument;
+use App\Utility\XmlIterator;
 
 /**
  * Check command.
@@ -44,9 +45,17 @@ class CheckCommand extends Command
     {
         $filePath = $args->getArgument('filepath');
 
-        //Check if the file exists and then validate 
+        /** 
+         * Check if the file exists and then validate
+         * using the DOMDocument. After validation the
+         * file path is passed on to the XMLIterator
+         * utility class for parsing.
+         * */ 
         $this->fileExists($filePath, $io);
         $this->validateBitsFile($filePath, $io);
+        $iterator = new XmlIterator($filePath);
+
+        $io->out(json_encode($iterator->getAttributes(), JSON_PRETTY_PRINT));
 
         return;
     }
