@@ -57,7 +57,7 @@ class CheckCommand extends Command
 
         // $io->success((json_encode($iterator->parse(), JSON_PRETTY_PRINT)));
         // $io->success($iterator->getInfoAsJson('book-id'));
-        $io->success(($iterator->getAttributes($iterator->bookPart())));
+        $io->success(($iterator->isbnAttributes()));
         // $io->success($iterator->bookId());
     
         return;

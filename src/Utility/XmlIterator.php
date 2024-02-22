@@ -2,23 +2,27 @@
 
 namespace App\Utility;
 use SimpleXMLElement;
+use SimpleXMLIterator;
 
 class XmlIterator
 {   
-    public string $filepath;
+    public SimpleXMLElement|SimpleXMLIterator $xml;
+
+    public array $attributes;
 
     public function __construct(string $filepath)
     {
-        $this->filepath = $filepath;
+        $this->xml = simplexml_load_file($filepath);
+        // $this->getAttributes();
     }
 
     /**
-     * Parses a XML files using the simplexml_load_file()
+     * Parses a XML files using the simplexml iterator
      * @return array
      */
     public function parse() : array
     {
-        $xml = simplexml_load_file($this->filepath);
+        $xml = $this->xml;
 
         $xmlElements = [];
         for($xml->rewind(); $xml->valid(); $xml->next())
@@ -94,19 +98,57 @@ class XmlIterator
         return $this->getInfoAsJson('book-part');
     }
 
-    public function getAttributes()
+    private function getAttributes($xpath)
     {
-        $xml = simplexml_load_file($this->filepath);
-        $Xmlattributes = $xml->xpath("//@*");
+        $xml = $this->xml;
+        $XmlAttributes = $xml->xpath("//$xpath");
 
         $attributes = [];
-        foreach($Xmlattributes as $key => $value)
+
+        $attributesCount = count($XmlAttributes);
+        if($attributesCount > 1)
+        {   
+            for ($i = 0; $i < $attributesCount; $i++) {
+                $attribute = $XmlAttributes[$i];
+                foreach ($attribute as $key => $value) {
+                    $attributes['key' . $i] = $key;
+                    $attributes['value'. $i] = $value;
+                }
+            }
+
+            return $attributes;
+        }
+        
+        foreach($XmlAttributes as $attribute) 
         {
-            $attributes[$key] = $value;
+            foreach ($attribute as $key => $value) 
+            {
+                $attributes['key'] = $key;
+                $attributes['value'] = $value;
+            }
         }
 
-        print_r($attributes);
-    
+
+        return $attributes;
     }
 
+    public function bookIdAttributes()
+    {
+        return $this->getAttributes("book-meta/book-id/@*");
+    }
+
+    public function contribGroupContribAttributes()
+    {
+        return $this->getAttributes("book-meta/contrib-group/contrib/@*");
+    }
+
+    public function pubDateAttributes()
+    {
+        return $this->getAttributes("book-meta/pub-date/@*");
+    }
+
+    public function isbnAttributes()
+    {
+        return $this->getAttributes("book-meta/isbn/@*");
+    } 
 }
