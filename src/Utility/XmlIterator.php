@@ -28,11 +28,20 @@ class XmlIterator
         for($xml->rewind(); $xml->valid(); $xml->next())
         {
             foreach($xml->getChildren() as $name => $data)
-            {
+            {   
+                if (array_key_exists($name, $xmlElements)) {
+                    if (!isset($index[$name])) {
+                        $index[$name] = 1;
+                    } else {
+                        $index[$name]++;
+                    }
+    
+                    $xmlElements["$name-$index[$name]"] = $data;
+                }
+
                 $xmlElements[$name] = $data;
             }
         }
-
         return $xmlElements;
     }
 
@@ -111,8 +120,8 @@ class XmlIterator
             for ($i = 0; $i < $attributesCount; $i++) {
                 $attribute = $XmlAttributes[$i];
                 foreach ($attribute as $key => $value) {
-                    $attributes['key' . $i] = $key;
-                    $attributes['value'. $i] = $value;
+                    $attributes['key-' . $i] = $key;
+                    $attributes['value-'. $i] = $value;
                 }
             }
 
@@ -150,5 +159,50 @@ class XmlIterator
     public function isbnAttributes()
     {
         return $this->getAttributes("book-meta/isbn/@*");
-    } 
+    }
+    
+    public function bookPartAttributes()
+    {
+        return $this->getAttributes("book-body/book-part/@*");
+    }
+
+    public function bookBodyBookIdAttributes()
+    {
+        return $this->getAttributes("book-body/book-part/book-part-meta/book-part-id/@*");
+    }
+
+    public function bookPartContribGroupContribAttributes()
+    {
+        return $this->getAttributes("book-body/book-part/book-part-meta/contrib-group/contrib/@*");
+    }
+
+    public function bookPartContribGroupContribBioAttributes()
+    {
+        return $this->getAttributes("book-body/book-part/book-part-meta/contrib-group/contrib/bio/@*");
+    }
+
+    public function bookPartContribGroupContribXrefAttributes()
+    {
+        return $this->getAttributes("book-body/book-part/book-part-meta/contrib-group/contrib/xref/@*");
+    }
+
+    public function bookPartAffAttributes()
+    {
+        return $this->getAttributes("book-body/book-part/book-part-meta/aff/@*");
+    }
+
+    public function bookPartPubDateAttributes()
+    {
+        return $this->getAttributes("book-body/book-part/book-part-meta/pub-date/@*");
+    }
+
+    public function bookPartAbstractAttributes()
+    {
+        return $this->getAttributes("book-body/book-part/book-part-meta/abstract/@*");
+    }
+
+    public function bookPartKwdGroupAttributes()
+    {
+        return $this->getAttributes("book-body/book-part/book-part-meta/kwd-group/@*");
+    }
 }
