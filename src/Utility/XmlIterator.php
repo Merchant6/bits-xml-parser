@@ -35,7 +35,7 @@ class XmlIterator
                     $index = 2;
                     while (in_array("$name-$index", $usedNames)) 
                     {
-                        $suffix++;
+                        $index++;
                     }
                     $name = "$name-$index";
                 }
@@ -225,5 +225,5 @@ class XmlIterator
     {
         return $this->getAttributes("book-body/book-part/book-part-meta/kwd-group/@*");
     }
-
+    
 }

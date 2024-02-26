@@ -57,8 +57,8 @@ class CheckCommand extends Command
         $xmlDb = new XmlToDatabase($filePath);
         $iterator = new XmlIterator($filePath);
         
-        $io->success(json_encode($iterator->parse(), JSON_PRETTY_PRINT));
-        // $io->success($xmlDb->saveContribGroupAttributes());
+        $io->success($iterator->bookPartKwdGroupAttributes());
+        $io->success($xmlDb->saveBookPartAttributes());
 
         return;
     }
