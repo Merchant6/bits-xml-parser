@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace App\Command;
 
+use App\Utility\XmlToDatabase;
 use Cake\Command\Command;
 use Cake\Console\Arguments;
 use Cake\Console\ConsoleIo;
@@ -53,13 +54,12 @@ class CheckCommand extends Command
          * */ 
         $this->fileExists($filePath, $io);
         $this->validateBitsFile($filePath, $io);
+        $xmlDb = new XmlToDatabase($filePath);
         $iterator = new XmlIterator($filePath);
+        
+        $io->success(json_encode($iterator->parse(), JSON_PRETTY_PRINT));
+        // $io->success($xmlDb->saveContribGroupAttributes());
 
-        $io->success((json_encode($iterator->parse(), JSON_PRETTY_PRINT)));
-        // $io->success($iterator->getInfoAsJson('book-id'));
-        // $io->success(($iterator->bookPartKwdGroupAttributes()));
-        // $io->success($iterator->bookId());
-    
         return;
     }
 

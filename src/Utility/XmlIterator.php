@@ -3,17 +3,15 @@
 namespace App\Utility;
 use SimpleXMLElement;
 use SimpleXMLIterator;
+use App\Utility\XmlToDatabase;
 
 class XmlIterator
 {   
     public SimpleXMLElement|SimpleXMLIterator $xml;
 
-    public array $attributes;
-
     public function __construct(string $filepath)
     {
         $this->xml = simplexml_load_file($filepath);
-        // $this->getAttributes();
     }
 
     /**
@@ -25,21 +23,28 @@ class XmlIterator
         $xml = $this->xml;
 
         $xmlElements = [];
+        $usedNames = [];
+
         for($xml->rewind(); $xml->valid(); $xml->next())
         {
             foreach($xml->getChildren() as $name => $data)
-            {   
-                if (array_key_exists($name, $xmlElements)) {
-                    if (!isset($index[$name])) {
-                        $index[$name] = 1;
-                    } else {
-                        $index[$name]++;
+            {
+                // Check for duplicate and generate suffix if needed
+                if (in_array($name, $usedNames)) 
+                {
+                    $index = 2;
+                    while (in_array("$name-$index", $usedNames)) 
+                    {
+                        $suffix++;
                     }
-    
-                    $xmlElements["$name-$index[$name]"] = $data;
+                    $name = "$name-$index";
                 }
 
+                // Add element and data to the array with the potentially suffixed name
                 $xmlElements[$name] = $data;
+
+                // Add the used name to the tracker
+                $usedNames[] = $name;
             }
         }
         return $xmlElements;
@@ -54,8 +59,24 @@ class XmlIterator
     public function getInfoAsJson(string $tagName)
     {
         $parsedXml = $this->parse();
-        return json_encode($parsedXml[$tagName], JSON_PRETTY_PRINT);
+
+        $matchedElements = [];
+        foreach ($parsedXml as $name => $data) 
+        {
+            // Use regex to match the tag name with or without an index
+            if (preg_match("/^$tagName(?:-\d+)?(.+)?$/", $name)) 
+            {
+                $matchedElements[$name] = $data;
+            }
+        }
+
+        return json_encode($matchedElements, JSON_PRETTY_PRINT);
     }
+    // public function getInfoAsJson(string $tagName)
+    // {
+    //     $parsedXml = $this->parse();
+    //     return json_encode($parsedXml[$tagName], JSON_PRETTY_PRINT);
+    // }
 
     /**
      * Placeholder method for getInfoAsJson to
@@ -137,7 +158,6 @@ class XmlIterator
             }
         }
 
-
         return $attributes;
     }
 
@@ -205,4 +225,5 @@ class XmlIterator
     {
         return $this->getAttributes("book-body/book-part/book-part-meta/kwd-group/@*");
     }
+
 }
