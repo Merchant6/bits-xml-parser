@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book>
+<book book-type="monograph" xml:lang="en">
+	<book-meta>
+		<book-id book-id-type="doi">10.5117/9789463729352</book-id>
+		<book-title-group>
+			<book-title>Women Filmmakers in Sinophone World Cinema</book-title>
+		</book-title-group>
+		<contrib-group>
+			<contrib contrib-type="author">
+				<name>
+					<surname>Zhang</surname>
+					<given-names>Zhen</given-names>
+				</name>
+			</contrib>
+		</contrib-group>
+		<pub-date publication-format="print">
+			<year>2023</year>
+			<month>08</month>
+			<day>25</day>
+		</pub-date>
+		<pub-date publication-format="online">
+			<year>2023</year>
+			<month>08</month>
+			<day>25</day>
+		</pub-date>
+		<isbn publication-format="print" content-type="hardcover">978 94 6372 935 2</isbn>
+		<isbn publication-format="electronic" content-type="pdf">978 90 4855 409 6</isbn>
+		<publisher>
+			<publisher-name>Amsterdam University Press</publisher-name>
+			<publisher-loc>
+				<addr-line>Nieuwe Prinsengracht 89</addr-line>
+				<postal-code>1018 VR</postal-code>
+				<city>Amsterdam</city>
+				<country>Nederland</country>
+			</publisher-loc>
+		</publisher>
+		<permissions>
+			<copyright-statement>&#x000a9; Zhen Zhang / Amsterdam University Press B.V., Amsterdam 2023</copyright-statement>
+			<copyright-year>2023</copyright-year>
+		</permissions>
+		<abstract xml:lang="en">
+			<p>Women Filmmakers in Sinophone World Cinema portrays a group of important contemporary women filmmakers working across the Sinophone world including Taiwan, Hong Kong, mainland China, and beyond. The book delineates and conceptualizes their cinematic and trans-media practices within an evolving, multifaceted feminist intimate-public commons. The films by these experienced and emerging filmmakers, including Huang Yu-shan, Yau Ching, Ai Xiaoming, Wen Hui, Huang Ji and others, represent some of the most innovative and socially engaged work in both fictional and non-fictional modes in Chinese-language cinema as well as global women’s cinema. Their narrative, documentary, and experimental film practices from the 1980s to the present, along with their work in sister media such as dance, theater, literature, and contemporary art, their activities as scholars, educators, activists, and film festival organizers or jurors, have significantly reshaped the landscape of Sinophone film culture and expanded the borders of world cinema.</p>
+		</abstract>
+	</book-meta>
+	<book-body>
+		<book-part book-part-type="chapter">
+			<book-part-meta>
+				<book-part-id book-part-id-type="doi">10.5117/9789463729352_intro</book-part-id>
+				<title-group>
+					<title>Introduction: Projecting Sinophone Cine-Feminisms</title>
+					<subtitle>Towards an Intimate-Public Commons</subtitle>
+				</title-group>
+				<contrib-group>
+					<contrib contrib-type="author">
+						<name>
+							<surname>Zhang</surname>
+							<given-names>Zhen</given-names>
+						</name>
+						<bio content-type="about-the-author"><p>Zhen Zhang teaches and directs the Asian Film and Media Initiative at the Department of Cinema Studies, Tisch School of the Arts, New York University. Her previous publications include An Amorous History of the Silver Screen: Shanghai Cinema 1895-1937, The Urban Generation: Chinese Cinema and Society at the Turn of the 21st Century, DV-Made China: Digital Subjects and Social Transformations after Independent Film (co-editor). She is the lead editor of the forthcoming Routledge Companion to Asian Cinemas.</p></bio>
+						<xref ref-type="aff" rid="cha1_aff1"><sup>1</sup></xref>
+					</contrib>
+				</contrib-group>
+				<aff id="cha1_aff1">
+					<label>1</label>
+					<institution>New York University</institution>
+				</aff>
+				<pub-date publication-format="print">
+					<year>2023</year>
+					<month>08</month>
+					<day>25</day>
+				</pub-date>
+				<fpage>11</fpage>
+				<lpage>50</lpage>
+				<abstract xml:lang="en"><p>The introduction outlines the historical and conceptual contours of the book centered on a group of uniquely important but under-studied women filmmakers working across the Taiwan Strait particularly and the Sinophone world at large. I synthesize a trans-Asian perspective and a locally grounded cine-feminist framework invested in the cultivation of an intimate-public commons. The main objective is to highlight women’s contribution to, and intervention in, the male-dominant New Wave Chinese-language cinemas and the attendant nationalist and academic discourses, while anchoring Sinophone cine-feminist currents in studies on the critical place of women’s cinema in world cinema and social transformations.</p></abstract>
+				<kwd-group xml:lang="en">
+					<kwd>Sinophone cine-feminism</kwd>
+					<kwd>world cinema</kwd>
+					<kwd>intimate-public commons</kwd>
+					<kwd>trans-Asian method</kwd>
+					<kwd>melodrama</kwd>
+					<kwd>documentary</kwd>
+				</kwd-group>
+			</book-part-meta>
+		</book-part>
+		<book-part book-part-type="chapter">
+			<book-part-meta>
+				<book-part-id book-part-id-type="doi">10.5117/9789463729352_ch01</book-part-id>
+				<title-group>
+					<title>Migrating Hearts</title>
+					<subtitle>Sinophone Geographies of Sylvia Chang’s “Woman’s Film”</subtitle>
+				</title-group>
+				<contrib-group>
+					<contrib contrib-type="author">
+						<name>
+							<surname>Zhang</surname>
+							<given-names>Zhen</given-names>
+						</name>
+						<bio content-type="about-the-author"><p>Zhen Zhang teaches and directs the Asian Film and Media Initiative at the Department of Cinema Studies, Tisch School of the Arts, New York University. Her previous publications include An Amorous History of the Silver Screen: Shanghai Cinema 1895-1937, The Urban Generation: Chinese Cinema and Society at the Turn of the 21st Century, DV-Made China: Digital Subjects and Social Transformations after Independent Film (co-editor). She is the lead editor of the forthcoming Routledge Companion to Asian Cinemas.</p></bio>
+						<xref ref-type="aff" rid="cha2_aff1"><sup>1</sup></xref>
+					</contrib>
+				</contrib-group>
+				<aff id="cha2_aff1">
+					<label>1</label>
+					<institution>New York University</institution>
+				</aff>
+				<pub-date publication-format="print">
+					<year>2023</year>
+					<month>08</month>
+					<day>25</day>
+				</pub-date>
+				<fpage>51</fpage>
+				<lpage>78</lpage>
+				<abstract xml:lang="en"><p>Chapter 1 accounts for Sylvia Chang’s role as the “mother of Taiwan New Cinema,” and her several wenyi melodrama or “woman’s films” made in Taiwan, Hong Kong, and mainland China since the 1980s. These films probe the tension between romantic love and “kin-love” in Chinese culture through moving portrayals of women’s independence and bonding across generations and geographical locations.</p></abstract>
+				<kwd-group xml:lang="en">
+					<kwd>Sylvia Chang</kwd>
+					<kwd>Taiwan New Cinema</kwd>
+					<kwd>Sinophone geography</kwd>
+					<kwd>“woman’s film,”</kwd>
+					<kwd>wenyi melodrama</kwd>
+					<kwd>migration</kwd>
+				</kwd-group>
+			</book-part-meta>
+		</book-part>
+		<book-part book-part-type="chapter">
+			<book-part-meta>
+				<book-part-id book-part-id-type="doi">10.5117/9789463729352_ch02</book-part-id>
+				<title-group>
+					<title>Floating Light and Shadows</title>
+					<subtitle>Huang Yu-shan’s Chronicles of Modern Taiwan</subtitle>
+				</title-group>
+				<contrib-group>
+					<contrib contrib-type="author">
+						<name>
+							<surname>Zhang</surname>
+							<given-names>Zhen</given-names>
+						</name>
+						<bio content-type="about-the-author"><p>Zhen Zhang teaches and directs the Asian Film and Media Initiative at the Department of Cinema Studies, Tisch School of the Arts, New York University. Her previous publications include An Amorous History of the Silver Screen: Shanghai Cinema 1895-1937, The Urban Generation: Chinese Cinema and Society at the Turn of the 21st Century, DV-Made China: Digital Subjects and Social Transformations after Independent Film (co-editor). She is the lead editor of the forthcoming Routledge Companion to Asian Cinemas.</p></bio>
+						<xref ref-type="aff" rid="cha3_aff1"><sup>1</sup></xref>
+					</contrib>
+				</contrib-group>
+				<aff id="cha3_aff1">
+					<label>1</label>
+					<institution>New York University</institution>
+				</aff>
+				<pub-date publication-format="print">
+					<year>2023</year>
+					<month>08</month>
+					<day>25</day>
+				</pub-date>
+				<fpage>79</fpage>
+				<lpage>106</lpage>
+				<abstract xml:lang="en"><p>Chapter 2 focuses on Huang Yu-shan, co-founder of Women Make Waves International Film Festival, feminist scholar, and director of a large body of narrative and documentary films, some of which are docu-fiction hybrids. Among the defining characteristics of her films are a deep commitment to women’s issues, local culture (especially her native Penghu Island and the south), and postcolonial Taiwan historiography.</p></abstract>
+				<kwd-group xml:lang="en">
+					<kwd>Penghu Islands</kwd>
+					<kwd>Women Make Waves International Film Festival</kwd>
+					<kwd>docu-fiction hybrids</kwd>
+					<kwd>modern Taiwan art</kwd>
+					<kwd>postcolonial historiography</kwd>
+				</kwd-group>
+			</book-part-meta>
+		</book-part>
+		<book-part book-part-type="chapter">
+			<book-part-meta>
+				<book-part-id book-part-id-type="doi">10.5117/9789463729352_ch03</book-part-id>
+				<title-group>
+					<title>From Sidewalk Realism to Spectral Romance</title>
+					<subtitle>Yang Lina’s Post-Socialist Beijing and Beyond</subtitle>
+				</title-group>
+				<contrib-group>
+					<contrib contrib-type="author">
+						<name>
+							<surname>Zhang</surname>
+							<given-names>Zhen</given-names>
+						</name>
+						<bio content-type="about-the-author"><p>Zhen Zhang teaches and directs the Asian Film and Media Initiative at the Department of Cinema Studies, Tisch School of the Arts, New York University. Her previous publications include An Amorous History of the Silver Screen: Shanghai Cinema 1895-1937, The Urban Generation: Chinese Cinema and Society at the Turn of the 21st Century, DV-Made China: Digital Subjects and Social Transformations after Independent Film (co-editor). She is the lead editor of the forthcoming Routledge Companion to Asian Cinemas.</p></bio>
+						<xref ref-type="aff" rid="cha4_aff1"><sup>1</sup></xref>
+					</contrib>
+				</contrib-group>
+				<aff id="cha4_aff1">
+					<label>1</label>
+					<institution>New York University</institution>
+				</aff>
+				<pub-date publication-format="print">
+					<year>2023</year>
+					<month>08</month>
+					<day>25</day>
+				</pub-date>
+				<fpage>107</fpage>
+				<lpage>136</lpage>
+				<abstract xml:lang="en"><p>Chapter 3 discusses the films by Yang Lina in relation to her unique career path from a state-employed dancer and performer to independent filmmaker as Beijing was transforming into an unevenly developed global city. Yang’s work significantly contributed to the DV Documentary Movement in the 1990s. She attends to her subjects, in both non-fiction and fictional works, with a compassionate camera and feminist concerns.</p></abstract>
+				<kwd-group xml:lang="en">
+					<kwd>DV</kwd>
+					<kwd>the compassionate camera</kwd>
+					<kwd>postsocialist urbanization</kwd>
+					<kwd>Chinese Dream</kwd>
+					<kwd>spectral realism</kwd>
+				</kwd-group>
+			</book-part-meta>
+		</book-part>
+		<book-part book-part-type="chapter">
+			<book-part-meta>
+				<book-part-id book-part-id-type="doi">10.5117/9789463729352_ch04</book-part-id>
+				<title-group>
+					<title>Eggs, Stones, and Stretch Marks</title>
+					<subtitle>Haptic Visuality and Tactile Resistance in Huang Ji’s Personal Cinema</subtitle>
+				</title-group>
+				<contrib-group>
+					<contrib contrib-type="author">
+						<name>
+							<surname>Zhang</surname>
+							<given-names>Zhen</given-names>
+						</name>
+						<bio content-type="about-the-author"><p>Zhen Zhang teaches and directs the Asian Film and Media Initiative at the Department of Cinema Studies, Tisch School of the Arts, New York University. Her previous publications include An Amorous History of the Silver Screen: Shanghai Cinema 1895-1937, The Urban Generation: Chinese Cinema and Society at the Turn of the 21st Century, DV-Made China: Digital Subjects and Social Transformations after Independent Film (co-editor). She is the lead editor of the forthcoming Routledge Companion to Asian Cinemas.</p></bio>
+						<xref ref-type="aff" rid="cha5_aff1"><sup>1</sup></xref>
+					</contrib>
+				</contrib-group>
+				<aff id="cha5_aff1">
+					<label>1</label>
+					<institution>New York University</institution>
+				</aff>
+				<pub-date publication-format="print">
+					<year>2023</year>
+					<month>08</month>
+					<day>25</day>
+				</pub-date>
+				<fpage>137</fpage>
+				<lpage>166</lpage>
+				<abstract xml:lang="en"><p>Chapter 4 highlights the courageous and expressive personal cinema of Huang Ji, a forceful emerging filmmaker who, in collaboration with her Japanese filmmaker husband, made two powerful, award-winning, autographically inflected feature films based on her experience as a sexually abused “left-behind” child in rural Hunan, as well as a home video style documentary about their trans-cultural nuclear family in a time of rising nationalism in China.</p></abstract>
+				<kwd-group xml:lang="en">
+					<kwd>left-behind children</kwd>
+					<kwd>sexual abuse</kwd>
+					<kwd>trans-cultural cinema</kwd>
+					<kwd>tactile aesthetic</kwd>
+					<kwd>home video</kwd>
+				</kwd-group>
+			</book-part-meta>
+		</book-part>
+		<book-part book-part-type="chapter">
+			<book-part-meta>
+				<book-part-id book-part-id-type="doi">10.5117/9789463729352_ch05</book-part-id>
+				<title-group>
+					<title>“Spicy-Painful” Theater of History</title>
+					<subtitle>Wen Hui’s Documentary Dance with Third Grandmother</subtitle>
+				</title-group>
+				<contrib-group>
+					<contrib contrib-type="author">
+						<name>
+							<surname>Zhang</surname>
+							<given-names>Zhen</given-names>
+						</name>
+						<bio content-type="about-the-author"><p>Zhen Zhang teaches and directs the Asian Film and Media Initiative at the Department of Cinema Studies, Tisch School of the Arts, New York University. Her previous publications include An Amorous History of the Silver Screen: Shanghai Cinema 1895-1937, The Urban Generation: Chinese Cinema and Society at the Turn of the 21st Century, DV-Made China: Digital Subjects and Social Transformations after Independent Film (co-editor). She is the lead editor of the forthcoming Routledge Companion to Asian Cinemas.</p></bio>
+						<xref ref-type="aff" rid="cha6_aff1"><sup>1</sup></xref>
+					</contrib>
+				</contrib-group>
+				<aff id="cha6_aff1">
+					<label>1</label>
+					<institution>New York University</institution>
+				</aff>
+				<pub-date publication-format="print">
+					<year>2023</year>
+					<month>08</month>
+					<day>25</day>
+				</pub-date>
+				<fpage>167</fpage>
+				<lpage>190</lpage>
+				<abstract xml:lang="en"><p>Chapter 5 centers on dancer, choreographer, and multi-media artist Wen Hui’s two experimental films made with her “forgotten” Third Grandmother. Their intimate-public camera constructs female kinship outside the patriarchal family tree and re-writes women’s history through oral storytelling and choreography of the everyday.</p></abstract>
+				<kwd-group xml:lang="en">
+					<kwd>documentary theater</kwd>
+					<kwd>body and memory</kwd>
+					<kwd>intimate-public camera</kwd>
+					<kwd>oral history</kwd>
+					<kwd>choreography of the everyday</kwd>
+				</kwd-group>
+			</book-part-meta>
+		</book-part>
+		<book-part book-part-type="chapter">
+			<book-part-meta>
+				<book-part-id book-part-id-type="doi">10.5117/9789463729352_ch06</book-part-id>
+				<title-group>
+					<title>In Praise of Trans-Asian Sisterhood</title>
+					<subtitle>Labor, Love, and Homecoming in Jasmine Ching-hui Lee’s Money and Honey</subtitle>
+				</title-group>
+				<contrib-group>
+					<contrib contrib-type="author">
+						<name>
+							<surname>Zhang</surname>
+							<given-names>Zhen</given-names>
+						</name>
+						<bio content-type="about-the-author"><p>Zhen Zhang teaches and directs the Asian Film and Media Initiative at the Department of Cinema Studies, Tisch School of the Arts, New York University. Her previous publications include An Amorous History of the Silver Screen: Shanghai Cinema 1895-1937, The Urban Generation: Chinese Cinema and Society at the Turn of the 21st Century, DV-Made China: Digital Subjects and Social Transformations after Independent Film (co-editor). She is the lead editor of the forthcoming Routledge Companion to Asian Cinemas.</p></bio>
+						<xref ref-type="aff" rid="cha7_aff1"><sup>1</sup></xref>
+					</contrib>
+				</contrib-group>
+				<aff id="cha7_aff1">
+					<label>1</label>
+					<institution>New York University</institution>
+				</aff>
+				<pub-date publication-format="print">
+					<year>2023</year>
+					<month>08</month>
+					<day>25</day>
+				</pub-date>
+				<fpage>191</fpage>
+				<lpage>220</lpage>
+				<abstract xml:lang="en"><p>Chapter 6 discusses Jasmine Ching-hui Lee’s critically and popularly acclaimed documentary Money and Honey about her friendship and filmmaking praxis with several female Philippine workers in a Taipei nursing home and their homeland. A culmination of her extended “women and homeland” documentary series, the decade-long trans-Asian project harnesses the melodramatic power for changing public attitudes and influencing government policies on immigrant labor.</p></abstract>
+				<kwd-group xml:lang="en">
+					<kwd>epic documentary melodrama</kwd>
+					<kwd>care workers</kwd>
+					<kwd>sentimentalism</kwd>
+					<kwd>“women and homeland” series</kwd>
+					<kwd>trans-Asian sisterhood</kwd>
+					<kwd>religion and feminism</kwd>
+				</kwd-group>
+			</book-part-meta>
+		</book-part>
+		<book-part book-part-type="chapter">
+			<book-part-meta>
+				<book-part-id book-part-id-type="doi">10.5117/9789463729352_ch07</book-part-id>
+				<title-group>
+					<title>“We Are Alive”</title>
+					<subtitle>Minor Transnationalism and Yau Ching’s Experimental Filmmaking</subtitle>
+				</title-group>
+				<contrib-group>
+					<contrib contrib-type="author">
+						<name>
+							<surname>Zhang</surname>
+							<given-names>Zhen</given-names>
+						</name>
+						<bio content-type="about-the-author"><p>Zhen Zhang teaches and directs the Asian Film and Media Initiative at the Department of Cinema Studies, Tisch School of the Arts, New York University. Her previous publications include An Amorous History of the Silver Screen: Shanghai Cinema 1895-1937, The Urban Generation: Chinese Cinema and Society at the Turn of the 21st Century, DV-Made China: Digital Subjects and Social Transformations after Independent Film (co-editor). She is the lead editor of the forthcoming Routledge Companion to Asian Cinemas.</p></bio>
+						<xref ref-type="aff" rid="cha8_aff1"><sup>1</sup></xref>
+					</contrib>
+				</contrib-group>
+				<aff id="cha8_aff1">
+					<label>1</label>
+					<institution>New York University</institution>
+				</aff>
+				<pub-date publication-format="print">
+					<year>2023</year>
+					<month>08</month>
+					<day>25</day>
+				</pub-date>
+				<fpage>221</fpage>
+				<lpage>250</lpage>
+				<abstract xml:lang="en"><p>Chapter 7 engages Hong Kong queer filmmaker Yau Ching’s non-fictional works, from her earlier experimental short films made in New York to her feature-length collaborative documentary We Are Alive (2010) made with confined delinquent adolescents in Hong Kong, Macau, and Japan. The transformational and comparative project on juvenile delinquency, adolescent femininities and masculinities, and state-sanctioned social conformity offer an instructive case study of minor transnationalism through a queer lens.</p></abstract>
+				<kwd-group xml:lang="en">
+					<kwd>minor transnationalism</kwd>
+					<kwd>queer experimental film</kwd>
+					<kwd>Hong Kong</kwd>
+					<kwd>diaspora</kwd>
+					<kwd>collaborative documentary</kwd>
+					<kwd>popular media</kwd>
+					<kwd>adolescence in East Asian societies</kwd>
+				</kwd-group>
+			</book-part-meta>
+		</book-part>
+		<book-part book-part-type="chapter">
+			<book-part-meta>
+				<book-part-id book-part-id-type="doi">10.5117/9789463729352_ch08</book-part-id>
+				<title-group>
+					<title>Outcries and Whispers</title>
+					<subtitle>Digital Political Mimesis and Radical Feminist Documentary</subtitle>
+				</title-group>
+				<contrib-group>
+					<contrib contrib-type="author">
+						<name>
+							<surname>Zhang</surname>
+							<given-names>Zhen</given-names>
+						</name>
+						<bio content-type="about-the-author"><p>Zhen Zhang teaches and directs the Asian Film and Media Initiative at the Department of Cinema Studies, Tisch School of the Arts, New York University. Her previous publications include An Amorous History of the Silver Screen: Shanghai Cinema 1895-1937, The Urban Generation: Chinese Cinema and Society at the Turn of the 21st Century, DV-Made China: Digital Subjects and Social Transformations after Independent Film (co-editor). She is the lead editor of the forthcoming Routledge Companion to Asian Cinemas.</p></bio>
+						<xref ref-type="aff" rid="cha9_aff1"><sup>1</sup></xref>
+					</contrib>
+				</contrib-group>
+				<aff id="cha9_aff1">
+					<label>1</label>
+					<institution>New York University</institution>
+				</aff>
+				<pub-date publication-format="print">
+					<year>2023</year>
+					<month>08</month>
+					<day>25</day>
+				</pub-date>
+				<fpage>251</fpage>
+				<lpage>286</lpage>
+				<abstract xml:lang="en"><p>Chapter 8 elaborates the political and aesthetic significance of leading feminist scholar, cultural critic, and activist Ai Xiaoming’s documentary films in tandem with those of Zeng Jinyan. It does so in relation to a digital political mimesis borne out of the widespread adoption of DV by media activists in China in the new century and its subsequent suppression and dispersion into internal and external exile.</p></abstract>
+				<kwd-group xml:lang="en">
+					<kwd>activist video</kwd>
+					<kwd>digital political mimesis</kwd>
+					<kwd>animation</kwd>
+					<kwd>citizen documentation</kwd>
+					<kwd>state violence</kwd>
+					<kwd>exile</kwd>
+				</kwd-group>
+			</book-part-meta>
+		</book-part>
+		<book-part book-part-type="chapter">
+			<book-part-meta>
+				<book-part-id book-part-id-type="doi">10.5117/9789463729352_epilo</book-part-id>
+				<title-group>
+					<title>Epilogue</title>
+				</title-group>
+				<contrib-group>
+					<contrib contrib-type="author">
+						<name>
+							<surname>Zhang</surname>
+							<given-names>Zhen</given-names>
+						</name>
+						<bio content-type="about-the-author"><p>Zhen Zhang teaches and directs the Asian Film and Media Initiative at the Department of Cinema Studies, Tisch School of the Arts, New York University. Her previous publications include An Amorous History of the Silver Screen: Shanghai Cinema 1895-1937, The Urban Generation: Chinese Cinema and Society at the Turn of the 21st Century, DV-Made China: Digital Subjects and Social Transformations after Independent Film (co-editor). She is the lead editor of the forthcoming Routledge Companion to Asian Cinemas.</p></bio>
+						<xref ref-type="aff" rid="cha10_aff1"><sup>1</sup></xref>
+					</contrib>
+				</contrib-group>
+				<aff id="cha10_aff1">
+					<label>1</label>
+					<institution>New York University</institution>
+				</aff>
+				<pub-date publication-format="print">
+					<year>2023</year>
+					<month>08</month>
+					<day>25</day>
+				</pub-date>
+				<fpage>287</fpage>
+				<lpage>294</lpage>
+				<abstract xml:lang="en"><p>The epilogue gives an update on several filmmakers’ recent work and situations, assessing the implications of digital technologies as well as the challenges brought by the Covid-19 pandemic and neo-Cold War cultural politics. A new tide of global Sinophone women’s cinema is emerging in Asia, North America and elsewhere, bringing hope for the future in a time of great uncertainty in the world.</p></abstract>
+				<kwd-group xml:lang="en">
+					<kwd>Covid-19 pandemic</kwd>
+					<kwd>neo-Cold War culture politics</kwd>
+					<kwd>Sinophone women’s cinema</kwd>
+				</kwd-group>
+			</book-part-meta>
+		</book-part>
+	</book-body>
+</book>

@@ -29,7 +29,6 @@ class XmlIterator
         {
             foreach($xml->getChildren() as $name => $data)
             {
-                // Check for duplicate and generate suffix if needed
                 if (in_array($name, $usedNames)) 
                 {
                     $index = 2;
@@ -40,10 +39,8 @@ class XmlIterator
                     $name = "$name-$index";
                 }
 
-                // Add element and data to the array with the potentially suffixed name
                 $xmlElements[$name] = $data;
 
-                // Add the used name to the tracker
                 $usedNames[] = $name;
             }
         }
@@ -72,12 +69,7 @@ class XmlIterator
 
         return json_encode($matchedElements, JSON_PRETTY_PRINT);
     }
-    // public function getInfoAsJson(string $tagName)
-    // {
-    //     $parsedXml = $this->parse();
-    //     return json_encode($parsedXml[$tagName], JSON_PRETTY_PRINT);
-    // }
-
+    
     /**
      * Placeholder method for getInfoAsJson to
      * return book-id tag
