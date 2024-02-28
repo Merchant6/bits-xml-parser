@@ -54,11 +54,12 @@ class CheckCommand extends Command
          * */ 
         $this->fileExists($filePath, $io);
         $this->validateBitsFile($filePath, $io);
-        $xmlDb = new XmlToDatabase($filePath);
-        $iterator = new XmlIterator($filePath);
         
-        $io->success($iterator->bookPartKwdGroupAttributes());
-        $io->success($xmlDb->saveBookPartAttributes());
+        /**
+         * You can call a method below to do a specific
+         * task like saving the data to database or 
+         * printing the data to the command line
+         */
 
         return;
     }
@@ -67,23 +68,22 @@ class CheckCommand extends Command
     {
         if(!file_exists($filePath))
         {
-            $io->error('File not found: ' . $filePath . PHP_EOL);
+            $io->abort('File not found: ' . $filePath . PHP_EOL);
             return;
         }
     }
 
     public function validateBitsFile(string $filePath, ConsoleIo $io): void
     {   
-        $dom = new DOMDocument();
-        $loadedXml =  $dom->load($filePath);
+        $loadedXml =  simplexml_load_file($filePath);
 
         if($loadedXml)
         {
-            $io->success('XML loaded successfully!' . PHP_EOL);
+            $io->success('XML file loaded successfully!' . PHP_EOL);
             return;
         }
 
-        $io->error('There was an error loading your file!' . PHP_EOL);
+        $io->abort('There was an error validating your file!' . PHP_EOL);
         return;
     }
 }

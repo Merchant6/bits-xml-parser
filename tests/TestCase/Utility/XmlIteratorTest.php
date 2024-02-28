@@ -10,36 +10,62 @@ use SimpleXMLIterator;
 
 class XmlIteratorTest extends TestCase
 {   
-    public MockObject|XmlIterator $xmlMock;
+    public XmlIterator $xmlMock;
 
     public function setUp(): void
     {   
         parent::setUp();
         $loadedFile = "/home/merchant/paul-upwork/10.5117_9789463729352.xml";
-        $this->xmlMock = $this->getMockBuilder(XmlIterator::class)
-        ->setConstructorArgs([$loadedFile])
-        ->disableOriginalConstructor()
-        ->getMock();
+        $this->xmlMock = new XmlIterator($loadedFile);
     }
 
-    public function testParseReturnsAnArray()
+    public function testParseReturnsAnArray(): void
     {   
         $parsedXml = $this->xmlMock->parse();
 
         $this->assertIsArray($parsedXml);
     }
 
-    public function testParseIsNotNull()
+    public function testParseIsNotEmpty(): void
     {
         $parsedXml = $this->xmlMock->parse();
         
-        $this->assertNotNull($parsedXml);
+        $this->assertNotEmpty($parsedXml);
     }
 
-    public function testInfoAsJsonIsAValidJson()
+    public function testInfoAsJsonIsAString(): void
     {
         $json = $this->xmlMock->getInfoAsJson('book-id');
         
         $this->assertIsString($json);
     }
+
+    public function testInfoAsJsonIsAValidJson(): void
+    {
+        $json = $this->xmlMock->getInfoAsJson('book-id');
+
+        $this->assertJson($json);
+    }
+
+    public function testInfoAsJsonIsNoEmpty(): void
+    {
+        $json = $this->xmlMock->getInfoAsJson('book-id');
+
+        $this->assertNotEmpty($json); 
+    }
+
+    public function testGetAttributesReturnsAnArray(): void
+    {
+        $attributes = $this->xmlMock->getAttributes('book-meta/contrib-group/contrib/@*');
+
+        $this->assertIsArray($attributes);
+    }
+
+    public function testGetAttributesIsNotEmpty(): void
+    {
+        $attributes = $this->xmlMock->getAttributes('book-meta/contrib-group/contrib/@*');
+        
+        $this->assertNotEmpty($attributes);
+    }
+
 }
