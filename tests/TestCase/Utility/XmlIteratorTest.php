@@ -15,7 +15,7 @@ class XmlIteratorTest extends TestCase
     public function setUp(): void
     {   
         parent::setUp();
-        $loadedFile = "/home/merchant/paul-upwork/10.5117_9789463729352.xml";
+        $loadedFile = __DIR__ . "/files/10.5117_9789463729352.xml";
         $this->xmlMock = new XmlIterator($loadedFile);
     }
 
